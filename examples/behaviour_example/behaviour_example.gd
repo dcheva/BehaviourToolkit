@@ -11,7 +11,7 @@ func _ready():
 
 
 func _on_well_area_body_entered(body:Node2D):
-	if body is TileMap:
+	if body is TileMap or body is TileMapLayer:
 		return
 
 	body.thirst += 10
